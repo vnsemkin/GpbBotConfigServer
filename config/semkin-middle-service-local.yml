@@ -1,0 +1,14 @@
+# Spring
+server.port: 8082
+backend.base-url: http://localhost:8080
+
+# Datasource
+spring.datasource.url: jdbc:postgresql://localhost:5432/gpb
+spring.datasource.username: ${GPB_DB_USERNAME}
+spring.datasource.password: ${GPB_DB_PASSWORD}
+
+# FlyWay
+spring.flyway.url: jdbc:postgresql://localhost:5432/gpb
+spring.flyway.user: ${GPB_DB_USERNAME}
+spring.flyway.password: ${GPB_DB_PASSWORD}
+spring.flyway.locations: classpath:db/migration

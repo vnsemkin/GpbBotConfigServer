@@ -2,7 +2,7 @@
 server.port: 8081
 
 # Middle service
-middle-service.base-url: "http://localhost:8082"
+middle-service.base-url: "http://middle-service:8082"
 
 # Telegram
 telegram.gpb-bot.name: "GPB IT Factory Backend 2024"

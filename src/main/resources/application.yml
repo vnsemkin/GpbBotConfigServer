@@ -1,5 +1,5 @@
 spring:
-  application.name: GpbBotConfigServer
+  application.name: config-server
   profiles.active: git
   cloud.config.server.git:
     uri: git@github.com:vnsemkin/GpbBotConfigServer.git
