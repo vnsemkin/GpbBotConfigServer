@@ -1,0 +1,8 @@
+spring:
+  application.name: GpbBotConfigServer
+  profiles.active: git
+  cloud.config.server.git:
+    uri: git@github.com:vnsemkin/GpbBotConfigServer.git
+    search-paths: config
+    default-label: master
+server.port: 8099

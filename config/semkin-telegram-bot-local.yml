@@ -1,0 +1,6 @@
+# Middle service
+middle-service.base-url: "http://middle-service:8082"
+
+# Telegram
+telegram.gpb-bot.name: "GPB IT Factory Backend 2024"
+telegram.gpb-bot.token: ${TELEGRAM_GPB_BOT_TOKEN}
