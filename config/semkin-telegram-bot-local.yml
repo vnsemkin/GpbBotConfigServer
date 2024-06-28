@@ -1,3 +1,6 @@
+# Spring
+server.port: 8081
+
 # Middle service
 middle-service.base-url: "http://middle-service:8082"
 
