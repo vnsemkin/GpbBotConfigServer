@@ -2,7 +2,7 @@ spring:
   application.name: config-server
   profiles.active: git
   cloud.config.server.git:
-    uri: git@github.com:vnsemkin/GpbBotConfigServer.git
+    uri: https://github.com/vnsemkin/GpbBotConfigServer.git
     search-paths: config
     default-label: trunk
 server.port: 8099
