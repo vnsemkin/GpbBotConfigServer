@@ -8,6 +8,9 @@ LABEL maintainer="Vladimir Semkin <vnsemkin@gmail.com>"
 # The application's jar file
 ARG JAR_FILE=./build/libs/*.jar
 
+# Copy the configuration files
+COPY config /config
+
 # Add the application's jar to the container
 COPY ${JAR_FILE} app.jar
 
@@ -28,4 +31,4 @@ COPY --from=build ${DEPENDENCY}/META-INF /app/META-INF
 COPY --from=build ${DEPENDENCY}/BOOT-INF/classes /app
 
 #execute the application
-ENTRYPOINT ["java","-cp","app:app/lib/*","org.vnsemkin.gpbbotconfigserver.GpbBotConfigServerApplication"]
+ENTRYPOINT ["java","-cp","app:app/lib/*","org.vnsemkin.gpbbotconfigserver.GpbBotConfigServerApplication "]
