@@ -7,3 +7,10 @@ middle-service.base-url: "http://localhost:8082"
 # Telegram
 telegram.gpb-bot.name: "GPB IT Factory Backend 2024"
 telegram.gpb-bot.token: ${TELEGRAM_GPB_BOT_TOKEN}
+
+# Actuator
+management.endpoints:
+  web:
+    exposure.include: health,info,metrics
+    base-path: /management
+  security.enabled: true
