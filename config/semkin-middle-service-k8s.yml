@@ -1,5 +1,6 @@
 # Spring
 server.port: 8082
+backend.base-url: http://fake-backend:8080
 
 # Datasource
 spring.datasource.url: jdbc:postgresql://gpb-postgres:5432/gpb
