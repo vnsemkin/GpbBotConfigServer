@@ -8,3 +8,17 @@ spring.datasource.url: jdbc:postgresql://gpb-postgres:5432/gpb
 # FlyWay
 spring.flyway.url: jdbc:postgresql://gpb-postgres:5432/gpb
 spring.flyway.locations: classpath:db/migration
+
+# Actuator, Prometheus
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+  endpoint:
+    prometheus:
+      enabled: true
