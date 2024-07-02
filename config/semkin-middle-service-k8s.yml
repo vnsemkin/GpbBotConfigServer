@@ -18,9 +18,14 @@ management:
   endpoint:
     prometheus:
       enabled: true
+    health:
+      show-details: always
   prometheus:
     metrics:
       export:
         enabled: true
+  health:
+    probes:
+      enabled: true
 
 

@@ -1,2 +1,21 @@
 # Spring
 server.port: 8080
+
+# Actuator, Prometheus
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    prometheus:
+      enabled: true
+    health:
+      show-details: always
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+  health:
+    probes:
+      enabled: true
